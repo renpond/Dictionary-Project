@@ -13,7 +13,16 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by Renee' Pond</small>
+          Coded by Renee' Pond and is open-sourced by {""}
+          <a
+            href="https://github.com/renpond/Dictionary-Project.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            {""}
+            Github
+          </a>
         </footer>
       </div>
     </div>
