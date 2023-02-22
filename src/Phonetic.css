@@ -1,0 +1,23 @@
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+.Text {
+  opacity: 0.8;
+  font-weight: bold;
+  margin: 15px;
+  font-size: 20px;
+  color: #efe0d5;
+}
+
+.Phonetics {
+  display: flex;
+  justify-content: flex-start;
+}
+.Audio {
+  color: #814256;
+}
+
+svg {
+  margin-top: 25px;
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import Dictionary from "./Dictionary";
 import "./App.css";
 
@@ -6,24 +5,39 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <h1>Dictionary</h1>
-        </header>
-        <main>
+        <main className="main-content">
           <Dictionary defaultKeyword="welcome" />
         </main>
-        <footer className="App-footer">
-          {" "}
+
+        <footer>
+          This project was coded by{" "}
           <a
-            href="https://github.com/renpond/Dictionary-Project-App.git"
+            href="https://www.linkedin.com/in/reneepond/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open-source Code
+            {" "}
+            Renee' Pond
+          </a>{" "}
+          and is open-sourced on{" "}
+          <a
+            href="https://github.com/renpond/Dictionary-Project-App"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
           </a>
           {""}
+          and hosted on
           {""}
-          <span> by Renee'</span>
+          <a
+            href="https://merry-starlight-b7eca7.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Netlify
+          </a>
         </footer>
       </div>
     </div>

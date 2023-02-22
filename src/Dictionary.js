@@ -3,7 +3,6 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
-import logo from "./logo.png";
 
 ///core concept to creating search function on a app/webpage
 export default function Dictionary(props) {
@@ -12,7 +11,7 @@ export default function Dictionary(props) {
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     //checking for response in dev tools
     //console.log(response.data[0]);
     //console.log(response.data[0].meanings[0].definitions[0].definition);
@@ -26,10 +25,10 @@ export default function Dictionary(props) {
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
     let pexelsApiKey =
       "eTzPVet67z3618gs6Shb7cBbr1YPEbJy5s5qvatIPi1fGPPXKnzTizHI";
-    let pexelApiUrl = `htpps://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
+    let pexelsApiUrl = `htpps://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
 
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
@@ -54,7 +53,6 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <img src={logo} className="Personal-logo img-fluid" alt="logo" />
           <h1>
             {" "}
             Dictionary <i class="fa-solid fa-book-open"></i>
