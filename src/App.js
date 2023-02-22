@@ -12,6 +12,7 @@ export default function App() {
         <main>
           <Dictionary />
         </main>
+        <h2> Suggestions: ...</h2>
         <footer className="App-footer">
           Coded by Renee' Pond and is open-sourced by {""}
           <a
