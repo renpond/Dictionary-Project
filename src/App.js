@@ -1,6 +1,6 @@
-//import logo from "./logo.gif";
-import "./App.css";
+import React from "react";
 import Dictionary from "./Dictionary";
+import "./App.css";
 
 export default function App() {
   return (
@@ -10,20 +10,20 @@ export default function App() {
           <h1>Dictionary</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="welcome" />
         </main>
-        <h2> Suggestions: ...</h2>
         <footer className="App-footer">
-          Coded by Renee' Pond and is open-sourced by {""}
+          {" "}
           <a
-            href="https://github.com/renpond/Dictionary-Project.git"
+            href="https://github.com/renpond/Dictionary-Project-App.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
-            {""}
-            Github
+            Open-source Code
           </a>
+          {""}
+          {""}
+          <span> by Renee'</span>
         </footer>
       </div>
     </div>
