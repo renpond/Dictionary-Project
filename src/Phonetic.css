@@ -1,3 +1,13 @@
+section {
+  box-shadow: rgba(250, 246, 246, 0.1) 0px 10px 10px;
+  background-color: #222f44;
+  color: #efe0d5;
+  border-radius: 7px;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;

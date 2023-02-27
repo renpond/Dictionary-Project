@@ -1,12 +1,12 @@
 import React, { useState } from "react";
+import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-import "./Dictionary.css";
 
 ///core concept to creating search function on a app/webpage
 export default function Dictionary(props) {
-  let [keyword, setKeyword] = useState("props.defaultKeyword");
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
@@ -23,9 +23,10 @@ export default function Dictionary(props) {
   }
 
   function search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 
     axios.get(apiUrl).then(handleDictionaryResponse);
+
     let pexelsApiKey =
       "eTzPVet67z3618gs6Shb7cBbr1YPEbJy5s5qvatIPi1fGPPXKnzTizHI";
     let pexelsApiUrl = `htpps://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
@@ -55,11 +56,12 @@ export default function Dictionary(props) {
         <section>
           <h1>
             {" "}
-            Dictionary <i class="fa-solid fa-book-open"></i>
+            Dictionary {""}
+            <i class="fa-solid fa-book-open"></i>
           </h1>
           <form
             className="col-12 d-flex me-5 justify-content-center"
-            onSubmit={search}
+            onSubmit={handleSubmit}
           >
             <input
               type="search"
@@ -78,12 +80,12 @@ export default function Dictionary(props) {
           </form>
           <div className="suggestions">
             <i class="fa-regular fa-lightbulb"></i>
-            {""}
-            <strong>Suggestions: </strong> Sauté, canny...
+            {""} {""}
+            <strong>Suggestions: </strong> Sauté, Beach, Giraffe...
           </div>
         </section>
-        <Photos photos={photos} />
         <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {

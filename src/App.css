@@ -1,23 +1,40 @@
-.container {
-  background-color: #f9f7fe;
-  margin: auto;
-  padding: 0px 12px;
-  max-width: 800px;
+.App {
   text-align: center;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 6px;
+  margin-top: 4px;
 }
 
-.App-header h1 {
-  font-size: 60px;
-  margin: 30px;
-  padding: 30px;
+body {
+  background-image: url("https://images.pexels.com/photos/207740/pexels-photo-207740.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.App-logo {
-  max-width: 200px;
+
+.App-header {
+  margin: 0;
+}
+.Personal-logo {
+  max-width: 100px;
   display: block;
   margin: 0 auto;
 }
 
-.App-footer {
-  text-align: center;
+.App footer {
+  font-size: 12px;
+  font-family: monospace;
+  color: #222f44;
   margin-top: 20px;
+  background-color: #efe0d5;
+  border-radius: 6px;
+}
+
+.App footer a {
+  color: #222f44;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
 }

@@ -7,7 +7,7 @@ export default function Photos(props) {
       <section className="Photos">
         <div className="row">
           {props.photos.map(function (photo, index) {
-            console.log(photo);
+            //console.log(photo);
             return (
               <div className="col-4" key={index}>
                 <a href={photo.src.original} target="_blank" rel="noreferrer">
@@ -15,7 +15,7 @@ export default function Photos(props) {
                     src={photo.src.landscape}
                     className="img-fluid"
                     alt="theme"
-                  ></img>
+                  />
                 </a>
               </div>
             );
