@@ -2,7 +2,7 @@ import React from "react";
 import Dictionary from "./Dictionary";
 import "./App.css";
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <div className="container">
@@ -26,7 +26,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            Github {""}
           </a>
           {""}
           and hosted on
@@ -44,3 +44,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

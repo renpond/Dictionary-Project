@@ -1,11 +1,11 @@
 .Dictionary h1 {
   color: #efe0d5;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-weight: bolder;
 }
 
 .Dictionary input {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 200%;
   padding: 6px 4px;
 }
@@ -14,7 +14,7 @@ section {
   box-shadow: rgba(250, 246, 246, 0.1) 0px 10px 10px;
   background-color: #222f44;
   color: #efe0d5;
-  border-radius: 7px;
+  border-radius: 9px;
   margin: 20px 0;
   padding: 30px;
   text-align: center;
@@ -32,11 +32,11 @@ section {
 
 .suggestions {
   text-align: left;
-  font-size: 14px;
+  font-size: 17px;
   font-family: monospace;
 }
 .fa-book-open {
   color: #efe0d5;
-  font-size: 30px;
+  font-size: 33px;
   display: inline-block;
 }

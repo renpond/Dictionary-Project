@@ -9,18 +9,13 @@
 }
 
 body {
-  background-image: url("https://images.pexels.com/photos/207740/pexels-photo-207740.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-image: url("https://images.pexels.com/photos/1926988/pexels-photo-1926988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .App-header {
   margin: 0;
-}
-.Personal-logo {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto;
 }
 
 .App footer {

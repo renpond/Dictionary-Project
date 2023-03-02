@@ -9,6 +9,7 @@ export default function Synonyms(props) {
           return (
             <li key={index}>
               <strong></strong>
+              {""}
               {synonym}
             </li>
           );
