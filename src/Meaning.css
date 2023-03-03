@@ -5,13 +5,13 @@
   font-weight: bold;
 }
 
-.Meaning p {
+.definition {
   font-size: 20px;
   text-align: left;
   margin-bottom: 5px;
 }
 
-.Meaning em {
+.example {
   font-style: italic;
   font-size: 19px;
   word-spacing: normal;

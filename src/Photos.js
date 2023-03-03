@@ -2,14 +2,14 @@ import React from "react";
 import "./Photos.css";
 
 export default function Photos(props) {
-  if (props.photos.length) {
+  if (props.photos) {
     return (
-      <section className="Photos">
-        <div className="row">
-          {props.photos.map(function (photo, index) {
+      <section className="">
+        <div className="row mt-2 mb-2 g-3">
+          {props.photos.map(function (photo, keyword) {
             //console.log(photo);
             return (
-              <div className="col-4" key={index}>
+              <div className="col-4 md-4" key={photo.id}>
                 <a
                   href={photo.src.original}
                   target="_blank"
@@ -17,8 +17,8 @@ export default function Photos(props) {
                 >
                   <img
                     src={photo.src.landscape}
-                    className="img-fluid"
-                    alt={photo.photographer}
+                    className="img-fluid photo"
+                    alt={keyword}
                   />
                 </a>
               </div>
